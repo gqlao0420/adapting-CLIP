@@ -30,7 +30,7 @@ Specifically, we are using commit [40f5484](https://github.com/openai/CLIP/commi
 ## Data
 All of the data should be put in a `data` directory in the root dir of the repo.
 
-1. Download the [Flickr](http://shannon.cs.illinois.edu/DenotationGraph/) and [VG](https://visualgenome.org/api/v0/api_home.html) images, to `data/flickr` and `data/vg` respectively.
+1. Download the [Flickr](http://shannon.cs.illinois.edu/DenotationGraph/) and [VG](https://visualgenome.org/api/v0/api_home.html) images [VG_100K](wget https://cs.stanford.edu/people/rak248/VG_100K/images.zip) and [VG_100K_2](wget https://cs.stanford.edu/people/rak248/VG_100K_2/images.zip), to `data/flickr` and `data/vg` respectively.
 2. Download Flickr30k Entities annotations using `cd data/flickr && git clone https://github.com/BryanPlummer/flickr30k_entities.git`.
 3. Download the [ZSG](https://github.com/TheShadow29/zsgnet-pytorch/blob/master/DATA_README.md) annotations from [this link](https://drive.google.com/open?id=1oZ5llnA4btD9LSmnSB0GaZtTogskLwCe) to `data/ds_csv_ann`:
 
