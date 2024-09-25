@@ -49,7 +49,7 @@ class CLIPMaskedSpatialViT(nn.Module):
         new_size = size * self.upsample
         emb = emb.permute(1, 0)
         emb = emb.view(1, D, size, size).contiguous()
-        emb = F.upsample(emb, size=new_size, mode='bilinear',
+        emb = F.interpolate(emb, size=new_size, mode='bilinear',
                          align_corners=self.align_corners)
         emb = emb.view(D, -1).contiguous()
         emb = emb.permute(1, 0)
